@@ -1,0 +1,267 @@
+html, body {
+      min-height: 100%;
+      }
+      body, input { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      h1, h4 {
+      font-weight: 400;
+      }
+      h4 {
+      margin: 22px 0 4px;
+      }
+      h5 {
+      text-transform: uppercase;
+      color: #095484;
+      }
+      .main-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 2px 5px #ccc; 
+      background: #fff;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      vertical-align: middle;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      outline: none;
+      }
+      input:hover, textarea:hover {
+      outline: none;
+      border: 1px solid #095484;
+      }
+      th, td {
+      width: 15%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      
+     span.required {
+        margin-left: 0;
+        color: red;
+        }
+      .additional-question th, .additional-question td {
+      width: 38%;
+      }
+      .course-rate th, .course-rate td {
+      width: 19%;
+      }
+      .first-col, .additional-question  .first-col, .course-rate .first-col {
+      width: 24%;
+      text-align: left;
+      }
+      .question, .comments {
+      margin: 15px 0 5px;
+      }
+      .question-answer label {
+      display: inline-block;
+      padding: 0 20px 15px 0;
+      }
+      .question-answer input {
+      width: auto;
+      }
+      .question-answer, table {
+      width: 100%;
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #0666a3;
+      }
+      @media (min-width: 568px) {
+      th, td {
+      word-break: keep-all;
+      }
+      input[type=radio], input[type=checkbox]  {
+        display: none;
+        }
+        label.radio, label.check {
+        position: relative;
+        display: inline-block;
+        margin: 5px 20px 15px 0;
+        cursor: pointer;
+        }
+      .checkbox-item label {
+        margin: 5px 20px 10px 0;
+        }
+        label.radio:before, label.check:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        }
+        label.radio:before {
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        border: 2px solid #095484;
+        }
+        
+        label.check:before {
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        border: 1px solid #095484;
+        }
+        input[type=checkbox]:checked + .check:before {
+        background: #095484;
+        }
+        label.radio:after {
+        left: 5px;
+        border: 3px solid #095484;
+        }
+        label.check:after {
+        left: 4px;
+         border: 3px solid #fff;
+        }
+        label.radio:after, label.check:after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        width: 8px;
+        height: 4px;
+        background: transparent;
+        border-top: none;
+        border-right: none;
+        transform: rotate(-45deg);
+        opacity: 0;
+        }
+        input[type=radio]:checked + label:after, input[type=checkbox]:checked + label:after {
+        opacity: 1;
+        }
+
+        .question span {
+            margin-left: 30px;
+            }
+        .table1 span {
+                margin-left: 30px;
+                } 
+          } 
+          
+          .selectdiv {
+            position: relative;
+            /*Don't really need this just for demo styling*/
+            
+            float: left;
+            min-width: 200px;
+            margin: 0;
+          }
+          
+          /* IE11 hide native button (thanks Matt!) */
+          select::-ms-expand {
+          display: none;
+          }
+          
+          .selectdiv:after {
+            content: '>';
+            font: 17px "Consolas", monospace;
+            color: #333;
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            right: 11px;
+            /*Adjust for position however you want*/
+            
+            top: 4px;
+            padding: 0 0 2px;
+            border-bottom: 1px solid #999;
+            /*left line */
+            
+            position: absolute;
+            pointer-events: none;
+          }
+          
+          .selectdiv select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            /* Add some styling */
+            
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            height: 30px;
+            float: right;
+            margin: 0;
+            padding: 0px 5px;
+            font-size: 16px;
+            line-height: 1.75;
+            color: #333;
+            background-color: #ffffff;
+            background-image: none;
+            border: 1px solid #cccccc;
+            -ms-word-break: normal;
+            word-break: normal;
+          }
+    .tabletext textarea{
+      width:1px;
+    }
+     /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 0px 18px;
+  width: 100%;
+  text-align: left;
+  border: 2px solid #ffffff;
+
+  outline: none;
+  transition: 1s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+
+
+          

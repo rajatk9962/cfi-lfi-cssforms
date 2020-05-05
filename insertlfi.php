@@ -1,0 +1,469 @@
+<?php
+$faculty_name =$_POST['faculty_name'];
+$subject =$_POST['subject'];
+$semester =$_POST['semester'];
+$year =$_POST['year'];
+$section =$_POST['section'];
+
+
+
+if (isset($_POST['f1'])) {
+    $f1 = $_POST['f1'];
+    
+    if ($f1 == 'file') {
+    $f1 = 'yes';
+    }}
+    else{
+        $f1= 'no';
+    }
+        
+    
+    
+if (isset($_POST['d1'])){ 
+        $d1 = $_POST['d1'];
+        
+        if ($d1 == 'dcf') {
+        $d1 = 'yes';
+        }
+        
+         }
+         else{
+            $d1= 'no';
+        }         
+if (isset($_POST['f2'])) {
+    $f2 = $_POST['f2'];
+    
+    if ($f2 == 'file') {
+    $f2 = 'yes';
+    }}
+    else{
+        $f2= 'no';
+    }
+        
+    
+    
+if (isset($_POST['d2'])){ 
+        $d2 = $_POST['d2'];
+        
+        if ($d2 == 'dcf') {
+        $d2 = 'yes';
+        }
+        
+         }
+         else{
+            $d2= 'no';
+        }                
+if (isset($_POST['f3'])) {
+    $f3 = $_POST['f3'];
+    
+    if ($f3 == 'file') {
+    $f3 = 'yes';
+    }}
+    else{
+        $f3= 'no';
+    }
+        
+    
+    
+if (isset($_POST['d3'])){ 
+        $d3 = $_POST['d3'];
+        
+        if ($d3 == 'dcf') {
+        $d3 = 'yes';
+        }
+        
+         }
+         else{
+            $d3= 'no';
+        }                      
+if (isset($_POST['f4'])) {
+    $f4 = $_POST['f4'];
+    
+    if ($f4 == 'file') {
+    $f4 = 'yes';
+    }}
+    else{
+        $f4= 'no';
+    }
+        
+    
+    
+if (isset($_POST['d4'])){ 
+        $d4 = $_POST['d4'];
+        
+        if ($d4 == 'dcf') {
+        $d4 = 'yes';
+        }
+        
+         }
+         else{
+            $d4= 'no';
+        }       
+
+if (isset($_POST['f5'])) {
+            $f5 = $_POST['f5'];
+            
+            if ($f5 == 'file') {
+            $f5 = 'yes';
+            }}
+            else{
+                $f5= 'no';
+            }
+                
+            
+            
+if (isset($_POST['d5'])){ 
+                $d5 = $_POST['d5'];
+                
+                if ($d5 == 'dcf') {
+                $d5 = 'yes';
+                }
+                
+                 }
+                 else{
+                    $d5= 'no';
+                }                      
+if (isset($_POST['f6'])) {
+            $f6 = $_POST['f6'];
+            
+            if ($f6 == 'file') {
+            $f6 = 'yes';
+            }}
+            else{
+                $f6= 'no';
+            }
+                
+            
+            
+if (isset($_POST['d6'])){ 
+                $d6 = $_POST['d6'];
+                
+                if ($d6 == 'dcf') {
+                $d6 = 'yes';
+                }
+                
+                 }
+                 else{
+                    $d6= 'no';
+                }                            
+ if (isset($_POST['f7'])) {
+    $f7 = $_POST['f7'];
+    
+    if ($f7 == 'file') {
+    $f7 = 'yes';
+    }}
+    else{
+        $f7= 'no';
+    }
+        
+    
+    
+if (isset($_POST['d7'])){ 
+        $d7 = $_POST['d7'];
+        
+        if ($d7 == 'dcf') {
+        $d7 = 'yes';
+        }
+        
+         }
+         else{
+            $d7= 'no';
+        }                      
+if (isset($_POST['f8'])) {
+    $f8 = $_POST['f8'];
+    
+    if ($f8 == 'file') {
+    $f8 = 'yes';
+    }}
+    else{
+        $f8= 'no';
+    }
+        
+    
+    
+if (isset($_POST['d8'])){ 
+        $d8 = $_POST['d8'];
+        
+        if ($d8 == 'dcf') {
+        $d8 = 'yes';
+        }
+        
+         }
+         else{
+            $d8= 'no';
+        }       
+
+if (isset($_POST['f9'])) {
+            $f9 = $_POST['f9'];
+            
+            if ($f9 == 'file') {
+            $f9 = 'yes';
+            }}
+            else{
+                $f9= 'no';
+            }
+                
+            
+            
+if (isset($_POST['d9'])){ 
+                $d9 = $_POST['d9'];
+                
+                if ($d9 == 'dcf') {
+                $d9 = 'yes';
+                }
+                
+                 }
+                 else{
+                    $d9= 'no';
+                }                      
+if (isset($_POST['f10'])) {
+            $f10 = $_POST['f10'];
+            
+            if ($f10 == 'file') {
+            $f10 = 'yes';
+            }}
+            else{
+                $f10= 'no';
+            }
+                
+            
+            
+if (isset($_POST['d10'])){ 
+                $d10 = $_POST['d10'];
+                
+                if ($d10 == 'dcf') {
+                $d10 = 'yes';
+                }
+                
+                 }
+                 else{
+                    $d10= 'no';
+                }                       
+if (isset($_POST['f11'])) {
+    $f11 = $_POST['f11'];
+    
+    if ($f11 == 'file') {
+    $f11 = 'yes';
+    }}
+    else{
+        $f11= 'no';
+    }
+        
+    
+    
+if (isset($_POST['d11'])){ 
+        $d11 = $_POST['d11'];
+        
+        if ($d11 == 'dcf') {
+        $d11 = 'yes';
+        }
+        
+         }
+         else{
+            $d11= 'no';
+        }                      
+if (isset($_POST['f12'])) {
+    $f12 = $_POST['f12'];
+    
+    if ($f12 == 'file') {
+    $f12 = 'yes';
+    }}
+    else{
+        $f12= 'no';
+    }
+        
+    
+    
+if (isset($_POST['d12'])){ 
+        $d12 = $_POST['d12'];
+        
+        if ($d12 == 'dcf') {
+        $d12 = 'yes';
+        }
+        
+         }
+         else{
+            $d12= 'no';
+        }       
+
+if (isset($_POST['f13'])) {
+            $f13 = $_POST['f13'];
+            
+            if ($f13 == 'file') {
+            $f13 = 'yes';
+            }}
+            else{
+                $f13= 'no';
+            }
+                
+            
+            
+if (isset($_POST['d13'])){ 
+                $d13 = $_POST['d13'];
+                
+                if ($d13 == 'dcf') {
+                $d13 = 'yes';
+                }
+                
+                 }
+                 else{
+                    $d13= 'no';
+                }                      
+if (isset($_POST['f14'])) {
+            $f14 = $_POST['f14'];
+            
+            if ($f14 == 'file') {
+            $f14 = 'yes';
+            }}
+            else{
+                $f14= 'no';
+            }
+                
+            
+            
+if (isset($_POST['d14'])){ 
+                $d14 = $_POST['d14'];
+                
+                if ($d14 == 'dcf') {
+                $d14 = 'yes';
+                }
+                
+                 }
+                 else{
+                    $d14= 'no';
+                }                         
+if (isset($_POST['f15'])) {
+                    $f15 = $_POST['f15'];
+                    
+                    if ($f15 == 'file') {
+                    $f15 = 'yes';
+                    }}
+                    else{
+                        $f15= 'no';
+                    }
+                        
+                    
+                    
+if (isset($_POST['d15'])){ 
+                        $d15 = $_POST['d15'];
+                        
+                        if ($d15 == 'dcf') {
+                        $d15 = 'yes';
+                        }
+                        
+                         }
+                         else{
+                            $d15= 'no';
+                        }                      
+if (isset($_POST['f16'])) {
+                    $f16 = $_POST['f16'];
+                    
+                    if ($f16 == 'file') {
+                    $f16 = 'yes';
+                    }}
+                    else{
+                        $f16= 'no';
+                    }
+                        
+                    
+                    
+if (isset($_POST['d16'])){ 
+                        $d16 = $_POST['d16'];
+                        
+                        if ($d16 == 'dcf') {
+                        $d16 = 'yes';
+                        }
+                        
+                         }
+                         else{
+                            $d16= 'no';
+                        }       
+                
+if (isset($_POST['f17'])) {
+                            $f17 = $_POST['f17'];
+                            
+                            if ($f17 == 'file') {
+                            $f17 = 'yes';
+                            }}
+                            else{
+                                $f17= 'no';
+                            }
+                                
+                            
+                            
+if (isset($_POST['d17'])){ 
+                                $d17 = $_POST['d17'];
+                                
+                                if ($d17 == 'dcf') {
+                                $d17 = 'yes';
+                                }
+                                
+                                 }
+                                 else{
+                                    $d17= 'no';
+                                }                      
+if (isset($_POST['f18'])) {
+                            $f18 = $_POST['f18'];
+                            
+                            if ($f18 == 'file') {
+                            $f18 = 'yes';
+                            }}
+                            else{
+                                $f18= 'no';
+                            }
+                                
+                            
+                            
+if (isset($_POST['d18'])){ 
+                                $d18 = $_POST['d18'];
+                                
+                                if ($d18 == 'dcf') {
+                                $d18 = 'yes';
+                                }
+                                
+                                 }
+                                 else{
+                                    $d18= 'no';
+                                }                      
+          
+                                                                                                                 
+if (!empty($faculty_name )||!empty($subject )||!empty($semester )||!empty($year )||!empty($section ))
+{
+    $host = "localhost";
+    $dbusername = "root";
+    $dbpassword = "";
+    $dbname = "audit";
+    // Create connection
+    $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+    if (mysqli_connect_error()){
+    die('Connect Error ('. mysqli_connect_errno() .') '
+    . mysqli_connect_error());
+    }
+    else{
+    $SELECT = "SELECT faculty_name From lfi Where faculty_name = ? Limit 1";
+    $INSERT="INSERT Into lfi(faculty_name ,subject ,semester ,year,section,f1,d1,f2,d2,f3,d3,f4,d4,f5,d5,f6,d6,f7,d7,f8,d8,f9,d9,f10,d10,f11,d11,f12,d12,f13,d13,f14,d14,f15,d15,f16,d16,f17,d17,f18,d18) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $stmt = $conn->prepare($SELECT);
+     $stmt->bind_param("s", $faculty_name);
+     $stmt->execute();
+     $stmt->bind_result($faculty_name);
+     $stmt->store_result();
+
+    $rnum = $stmt->num_rows;
+     if ($rnum==0) {
+    $stmt = $conn->prepare($INSERT);
+    $stmt->bind_param("ssissssssssssssssssssssssssssssssssssssss",$faculty_name ,$subject ,$semester ,$year,$section,$f1,$d1,$f2,$d2,$f3,$d3,$f4,$d4,$f5,$d5,$f6,$d6,$f7,$d7,$f8,$d8,$f9,$d9,$f10,$d10,$f11,$d11,$f12,$d12,$f13,$d13,$f14,$d14,$f15,$d15,$f16,$d16,$f17,$d17,$f18,$d18);
+    $stmt->execute();
+    echo "New record inserted sucessfully";
+     }
+
+    $stmt->close();
+    $conn->close();
+    }}
+    else{
+    echo "all fields required";
+    die();
+    }
+
+    
+    
+    ?>

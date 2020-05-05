@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Department Academic Audit - I</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="DAA.css" type="text/css" rel="stylesheet">
+     </head>
+    <body>    
+    <div class="main-block">
+      <form  method="POST" action="insertdaa.php" novalidate>
+        <h1>Department Academic Audit - I</h1>
+        <h4>Faculty Name</h4>
+        <input type="text" name="faculty_name">
+        <h4>Subject</h4>
+        <input type="text" name="subject">
+        
+        <table class="table1">
+          <tr>
+              <td class="first-col">Semester:</td>
+              <td class="first-col">
+                  <div class="selectdiv" >
+                      <label>
+                          <select name="semester">
+                              <option disabled selected value> -- select semester -- </option>
+                              <option value="3">III</option>
+                              <option value="4">IV</option>
+                              <option value="5">V</option>
+                              <option value="6">VI</option>
+                              <option value="7">VII</option>
+                              <option value="8">VIII</option>
+                          </select>
+                      </label>
+                    </div>
+              </td> 
+          </tr>
+  
+          <tr>
+        <td class="first-col">Year:</td>
+        <div class="question">
+        <div class="question-answer">
+           <td class="first-col"> <input type="radio" value="SE" id="radio_1" name="year" required>
+            <label for="radio_1" class="radio"><span>   SE</span></label></td> 
+           <td class="first-col"> <input type="radio" value="TE" id="radio_2" name="year" required>
+            <label for="radio_2" class="radio"><span>  TE</span></label></td> 
+           <td class="first-col"> <input type="radio" value="BE" id="radio_3" name="year" required>
+            <label for="radio_3" class="radio"><span>  BE</span></label></td> 
+        </div>
+        </div>
+        </tr>
+        <tr>
+            <td class="first-col">Division:</td>
+            <div class="question">
+            <div class="question-answer">
+               <td class="first-col"> <input type="radio" value="A" id="radio_4" name="section" required>
+                <label for="radio_4" class="radio"><span>   A</span></label></td> 
+               <td class="first-col"> <input type="radio" value="B" id="radio_5" name="section" required>
+                <label for="radio_5" class="radio"><span>  B</span></label></td> 
+               <td class="first-col"> <input type="radio" value="C" id="radio_6" name="section" required>
+                <label for="radio_6" class="radio"><span>  C</span></label></td> 
+            </div>
+            </div>
+            </tr>
+        </table>
+      
+        <button type="button" class="accordion"><h5>Audit Observation point</h5></button>
+        <div class="panel">
+        
+          <table>
+            <tr>
+              <th class="first-col">Document</th>
+              
+              <th>A</th>
+              <th>B</th>
+              <th>C</th>
+            
+            </tr>
+            <tr>
+              <td class="first-col">1.	Previous Year (Nov/May) university Question Paper Analysis
+              </td>
+              <td> <input type="checkbox" checked=true  id="A1" name="A1" value="checked">
+                <label for="A1" class="check"></label>
+                <input type="text" disabled="true" id="AT1" name="AT1">
+                
+              </td>
+              <td> <input type="checkbox" checked=true  id="B2" name="B1" value="checked">
+                <label for="B2" class="check"></label>
+                <input type="text" disabled="true" id="BT2" name="BT1">
+                
+              </td>
+              <td> <input type="checkbox" checked=true   id="C2" name="C1" value="checked">
+                <label for="C2" class="check"></label>
+                <input type="text" disabled="true" id="CT3" name="CT1">
+                
+              </td>
+            </tr> 
+            <!-- <tr>
+              <td class="first-col">2.	Prerequisite test performance and analysis 	
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">3. All documents verified and certified in course file
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">4.	Defaulters list justified
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">5.	List of Topper and Weak Students of Class
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">6.	Sample copies of evaluation components and their marking
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">7.	LMS uploading status and usage by students
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">8.	DCF and its consistency with course file contents
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">9.  Syllabus coverage and its consistency with the number of classes allocated
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">10.	ICT activities in class room along with proofs
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">11.	Smart board usage and proofs
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">12.	Workshops/ expert lecture planning and conduction
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">13.	Faculty absence and its coverage lecture
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">14.	Domain knowledge growth in terms of books referred
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">15.	EPI performance of previous end sem and current sem exams with peers
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">16.	Internal Assessment Improvement Analysis
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">17.	Identifying and remembering best and week students and action taken thereafter
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">18.	Continuous evaluation in labs.
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">19. Experiment conduction and  its consistency with the DCF and syllabus
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">20.	Additional experiments / mini projects
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+              <td> <input type="checkbox" checked=true name="abc" reason="purpose" id="ccheck">
+                <label for="ccheck" class="check"></label>
+                <input type="text" disabled="true" id="cinp">
+                
+              </td>
+            </tr>  -->
+            
+
+
+
+
+           
+          </table>
+        </div>
+        <!-- <p class="comments">Comments</p>
+        <textarea rows="5"></textarea>
+        <h5>Comments on strengths and ways of improvement</h5>
+        <p class="comments">What changes would you recommend to improve this course?</p>
+        <textarea rows="5"></textarea>
+        <p class="comments">What did you like best about your instructors teaching?</p>
+        <textarea rows="5"></textarea>
+        <p class="comments">What did you like least about your instructor�s teaching?</p>
+        <textarea rows="5"></textarea>
+        <p class="comments">Any further, constructive comment</p>
+        <textarea rows="5"></textarea> -->
+        <div class="btn-block">
+          <button type="submit"  value="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+      
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+        $('#A1').change(function(){
+            if($("#A1").is(":checked")){
+                $('#AT1').prop('disabled',true);
+                $('AT1').val(null);
+            }
+            else{
+                $('#AT1').prop('disabled',false);
+            }
+        });
+      }
+      $('#B2').change(function(){
+            if($("#B2").is(":checked")){
+                $('#BT2').prop('disabled',true);
+                $('BT2').val(null);
+            }
+            else{
+                $('#BT2').prop('disabled',false);
+            }
+        });
+        $('#C2').change(function(){
+            if($("#C2").is(":checked")){
+                $('#CT3').prop('disabled',true);
+                $('CT3').val(null);
+            }
+            else{
+                $('#CT3').prop('disabled',false);
+            }
+        });
+      </script>
+  </body>
+</html>

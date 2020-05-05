@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laboratory File Index</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="LFI.css" type="text/css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="main-block">
+      <form method="POST" action="insertlfi.php" novalidate>
+        <h1>Laboratory File Index</h1>
+        <h4>Faculty Name</h4>
+        <input type="text" name="faculty_name">
+        <h4>Subject</h4>
+        <input type="text" name="subject">
+        
+        <table class="table1">
+          <tr>
+              <td class="first-col">Semester:</td>
+              <td class="first-col">
+                  <div class="selectdiv">
+                      <label>
+                          <select name="semester">
+                              <!-- <option selected> Enter Semester </option> -->
+                              <option disabled selected value> -- select semester -- </option>
+                              <option>III</option>
+                              <option>IV</option>
+                              <option>V</option>
+                              <option>VI</option>
+                              <option>VII</option>
+                              <option>VIII</option>
+                          </select>
+                      </label>
+                    </div>
+              </td> 
+          </tr>
+  
+          <tr>
+            <td class="first-col">Year:</td>
+            <div class="question">
+            <div class="question-answer">
+               <td class="first-col"> <input type="radio" value="SE" id="radio_1" name="year" required>
+                <label for="radio_1" class="radio"><span>   SE</span></label></td> 
+               <td class="first-col"> <input type="radio" value="TE" id="radio_2" name="year" required>
+                <label for="radio_2" class="radio"><span>  TE</span></label></td> 
+               <td class="first-col"> <input type="radio" value="BE" id="radio_3" name="year" required>
+                <label for="radio_3" class="radio"><span>  BE</span></label></td> 
+            </div>
+            </div>
+            </tr>
+            <tr>
+                <td class="first-col">Division:</td>
+                <div class="question">
+                <div class="question-answer">
+                   <td class="first-col"> <input type="radio" value="A" id="radio_4" name="section" required>
+                    <label for="radio_4" class="radio"><span>   A</span></label></td> 
+                   <td class="first-col"> <input type="radio" value="B" id="radio_5" name="section" required>
+                    <label for="radio_5" class="radio"><span>  B</span></label></td> 
+                   <td class="first-col"> <input type="radio" value="C" id="radio_6" name="section" required>
+                    <label for="radio_6" class="radio"><span>  C</span></label></td>  
+            </div>
+            </div>
+            </tr>
+        </table>
+
+        <h5>Preparatory Work</h5>
+        <div>
+          <table>
+            <tr>
+              <th class="first-col">Document</th>
+              
+              <th>Laboratory file</th>
+              <th>DCF</th>
+            
+            </tr>
+            <tr>
+              <td class="first-col">1.	Personal Time Table
+              </td>
+              <td><input type="checkbox"  name="f1" id="check_1.1" value="file" > <label for="check_1.1" class="check"></label>
+              </td>
+              <td><input type="checkbox" name="d1" id="check_1.2"  value="dcf" ><label for="check_1.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">2.	Academic Calendar 	
+              </td>
+              <td><input type="checkbox"  name="f2" id="check_2.1" value="file"> <label for="check_2.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d2" id="check_2.2" value="dcf"><label for="check_2.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">3.	Syllabus
+              </td>
+              <td><input type="checkbox"  name="f3" id="check_3.1" value="file"> <label for="check_3.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d3" id="check_3.2" value="dcf"><label for="check_3.2" class="check"></label>  
+              </td>
+            </tr> 
+          
+            <tr>
+              <td class="first-col">4. Laboratory Plan	
+              </td>
+              <td><input type="checkbox"  name="f4" id="check_4.1" value="file"> <label for="check_4.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d4" id="check_4.2" value="dcf"><label for="check_4.2" class="check"></label>  
+              </td>
+            </tr> 
+
+            <tr>
+              <td class="first-col">5. List of Topper and Weak Students of Class	
+              </td>
+              <td><input type="checkbox"  name="f5" id="check_5.1" value="file"> <label for="check_5.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d5" id="check_5.2" value="dcf"><label for="check_5.2" class="check"></label>  
+              </td>
+            </tr> 
+          </table>
+            <h5>Analysis</h5>
+          <table>
+            <tr>
+                  <th class="first-col">Document</th>
+                  
+                  <th>Course file</th>
+                  <th>DCF</th>
+                
+            </tr>
+            <tr>
+              <td class="first-col">6. Pre-requisite Coding Skills Test Performance Analysis
+              </td>
+              <td><input type="checkbox"  name="f6" id="check_6.1" value="file"> <label for="check_6.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d6" id="check_6.2" value="dcf"><label for="check_6.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">7. Coding Skills Test Performance Analysis
+              </td>
+              <td><input type="checkbox"  name="f7" id="check_7.1" value="file"> <label for="check_7.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d7" id="check_7.2" value="dcf"><label for="check_7.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">	
+                8. Attendence,Practical Grading and Oral Skills Grading Sheets
+              </td>
+              <td><input type="checkbox"  name="f8" id="check_8.1" value="file"> <label for="check_8.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d8" id="check_8.2" value="dcf"><label for="check_8.2" class="check"></label>  
+              </td>
+            </tr> 
+          
+          
+            <tr>
+              <td class="first-col">9. Assignments, Details, Gfading and Performance Analysis
+              </td>
+              <td><input type="checkbox"  name="f9" id="check_9.1" value="file"> <label for="check_9.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d9" id="check_9.2" value="dcf"><label for="check_9.2" class="check"></label>  
+              </td>
+            </tr>
+          </table>
+          <h5>Conduction</h5>
+          <table>
+            <tr>
+                  <th class="first-col">Document</th>
+                  
+                  <th>Course file</th>
+                  <th>DCF</th>
+                
+            </tr> 
+            <tr>
+              <td class="first-col">10. LO-PO Undertaking Form 
+              </td>
+              <td><input type="checkbox"  name="f10" id="check_10.1" value="file"> <label for="check_10.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d10" id="check_10.2" value="dcf"><label for="check_10.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">11. Laboratory Coverage
+              </td>
+              <td><input type="checkbox"  name="f11" id="check_11.1" value="file"> <label for="check_11.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d11" id="check_11.2" value="dcf"><label for="check_11.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">12. List of Toppers and Weak Students of Laboratory
+              </td>
+              <td><input type="checkbox"  name="f12" id="check_12.1" value="file"> <label for="check_12.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d12" id="check_12.2" value="dcf"><label for="check_12.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">13. Class Defaulters List and Weak Students of Laboratory
+              </td>
+              <td><input type="checkbox"  name="f13" id="check_13.1" value="file"> <label for="check_13.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d13" id="check_13.2" value="dcf"><label for="check_13.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">14. Weakness Removal Activity Record
+              </td>
+              <td><input type="checkbox"  name="f14" id="check_14.1" value="file"> <label for="check_14.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d14" id="check_14.2" value="dcf"><label for="check_14.2" class="check"></label>  
+              </td>
+            </tr> 
+          
+            <tr>
+              <td class="first-col">15. Laboratory LMS Partcipation Record	
+              </td>
+              <td><input type="checkbox"  name="f15" id="check_15.1" value="file"> <label for="check_15.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d15" id="check_15.2" value="dcf"><label for="check_15.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">16. Proofs of ICT Activity
+              </td>
+              <td><input type="checkbox"  name="f16" id="check_16.1" value="file"> <label for="check_16.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d16" id="check_16.2" value="dcf"><label for="check_16.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">17. Sample of Copy of Assignments
+              </td>
+              <td><input type="checkbox"  name="f17" id="check_17.1" value="file"> <label for="check_17.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d17" id="check_17.2" value="dcf"><label for="check_17.2" class="check"></label>  
+              </td>
+            </tr> 
+            <tr>
+              <td class="first-col">18. Content Beyond Syllabus of Assignments
+              </td>
+              <td><input type="checkbox"  name="f18" id="check_18.1" value="file"> <label for="check_18.1" class="check"></label>
+              </td>
+              <td><input type="checkbox"  name="d18" id="check_18.2" value="dcf"><label for="check_18.2" class="check"></label>  
+              </td>
+            </tr> 
+            </table>
+
+
+
+            
+          </table>
+        </div>
+        <!-- <p class="comments">Comments</p>
+        <textarea rows="5"></textarea>
+        <h5>Comments on strengths and ways of improvement</h5>
+        <p class="comments">What changes would you recommend to improve this course?</p>
+        <textarea rows="5"></textarea>
+        <p class="comments">What did you like best about your instructors teaching?</p>
+        <textarea rows="5"></textarea>
+        <p class="comments">What did you like least about your instructor�s teaching?</p>
+        <textarea rows="5"></textarea>
+        <p class="comments">Any further, constructive comment</p>
+        <textarea rows="5"></textarea> -->
+        <div class="btn-block">
+          <button type="submit" value="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
